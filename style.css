@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- BODY ---------- */
+body {
+  font-family: "Merriweather Sans", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* ---------- PRICING TABLE (CARD) ---------- */
+.pricing-table {
+  flex: 1;                 
+  max-width: 360px;         
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 12px;
+  color: black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-table:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* ---------- THEMES ---------- */
+.basic {
+  background: linear-gradient(to bottom, rgb(55, 46, 182), #29cbf0);
+}
+
+.standard {
+  background: linear-gradient(to bottom, rgb(243, 173, 21), #dab763);
+}
+
+.premium {
+  background: linear-gradient(to bottom, #ff00f2, rgb(250, 126, 240));
+}
+
+/* ---------- TOP SECTION ---------- */
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.icon-table {
+  width: 50px;
+}
+
+.pricing-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* ---------- BOTTOM SECTION ---------- */
+.bottom {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+}
+
+.pricing-price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ---------- FEATURES ---------- */
+.features-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.features {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1rem;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.items-icon {
+  width: 40px;
+}
+
+.right {
+  width: 35px;
+}
+
+/* ---------- BUTTON ---------- */
+.chooseplan-btn {
+  margin-top: 30px;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-blue {
+  background: linear-gradient(to left, rgb(34, 64, 233), #133366);
+}
+
+.btn-orange {
+  background: linear-gradient(to left, rgb(250, 213, 126), #FF9400);
+}
+
+.btn-purple {
+  background: linear-gradient(to left, #fd87ff, #fb00ff);
+}
+
+@media (max-width: 1255px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-table {
+    width: 100%;
+    max-width: 420px;
+  }
+}
